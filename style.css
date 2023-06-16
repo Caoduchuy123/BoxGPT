@@ -56,6 +56,7 @@ body{
 }
 
 .info a:hover{
+    font-size: 35px;
     color: #4caf50;
 }
 
