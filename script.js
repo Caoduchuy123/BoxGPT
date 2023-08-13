@@ -39,13 +39,13 @@ function sendMessage() {
     appendMessage('user', message);
     userInput.value = '';
 
-    const options = {
-        method: 'POST',
-        headers: {
-            'content-type': 'application/json',
-            'X-RapidAPI-Key': 'd33d3863a2msha6860e27159e904p1e6f57jsnac05f092111e',
-            'X-RapidAPI-Host': 'chatgpt53.p.rapidapi.com'
-         },
+   const options = {
+	method: 'POST',
+	headers: {
+		'content-type': 'application/json',
+		'X-RapidAPI-Key': 'd33d3863a2msha6860e27159e904p1e6f57jsnac05f092111e',
+		'X-RapidAPI-Host': 'chatgpt53.p.rapidapi.com'
+	},
         body: `{"messages":[{"role":"user","content":"${message}"}]}`
         // if you want use official api you need have this body
         // `{"model":"gpt-3.5-turbo","messages":[{"role":"user","content":"${message}"}]}`
